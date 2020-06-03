@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav_wrap">
+      <div class="nav_left">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png">
+        <img src="img/logo_text.png">
+      </div>
+      <!--nav_left-->
+      <div class="nav_search">
+        <input type="text" placeholder="검색">
+      </div>
+      <!--nav_search-->
+      <div class="nav_right">
+        <ul>
+          <li><a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                alt="탐색"></a></li>
+          <li><a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                alt="하트"></a></li>
+          <li><a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                alt="마이페이지"></a></li>
+        </ul>
+      </div>
+      <!--nav_right-->
+    </div>
+    <!--nav_wrap-->
+  </nav>
+  <main style="padding: 150px 0;">
+    <div class="feeds">
+      <article>
+        <div class="feeds_content box_line">
+          <div class="content_top">
+            <div class="content_person">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+                alt="사용자이미지">
+              <span>사용자아이디</span>
+            </div>
+            <img class="insta_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+              alr="메뉴더보기">
+          </div>
+          <!--content_top-->
+
+          <img class="contents_img"
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/101216503_101737134879274_961812694741174798_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=Ps6vwJUljlYAX-HwBoz&oh=1bf2fb86d1751f0eb7fb086b3d027a77&oe=5EFD9854"
+            alt="피드이미지">
+
+          <div class="contents_bottom">
+            <div class="contents_box">
+              <ul class="clearfix">
+                <li><img class="insta_icon"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트"></li>
+                <li><img class="insta_icon"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="댓글"></li>
+                <li><img class="insta_icon"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="공유"></li>
+                <li><img class="insta_icon"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="책갈피"></li>
+              </ul>
+              <div class="content_person" style="margin: 5px 0 15px;;">
+                <img class="id_img" style="width: 30px;"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+                  alt="댓글 좋아요 사용자 이미지">
+                <span><strong>ani</strong>님 외 <strong>10명</strong>이 좋아합니다</span>
+              </div>
+              <span class="contents_txt"><strong>사용자이름</strong>&nbsp; 위워크에서 진행한 베이킹 클래스</span>
+
+            </div>
+            
+            <ul class="comments_list">
+              <li class="comments_list_li">
+                <span><span class="comments_name">이름</span>내용추가</span>
+              </li>
+            </ul>
+            
+            <div class="comments_box">
+              <div class="comments">
+               
+                <input id="comments_input" placeholder="댓글달기.." type="text">
+                <button id="comments_button" onkeyup="enterkey()">게시</button>
+              </div>
+            </div>
+            <!--comments_box-->
+
+          </div>
+        </div>
+        <!--feeds_content-->
+      </article>
+      <!--article-->
+      <div class="main-right">
+        <div class="right_top content_person">
+          <img class="id_img"
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+            alt="이미지">
+          <div class="id_person">
+            <span class="id_tit">wecode</span>
+            <span class="id_txt">wecode|위코드</span>
+          </div>
+        </div>
+        <!--right_top-->
+        <div class="right_box box_line clearfix">
+          <div class="box_tit">
+            <span>스토리</span>
+            <span>모두 보기</span>
+          </div>
+          <ul>
+            <li class="content_person">
+              <img class="id_img story_line"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/52548610_757661944618530_849070298039844864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=oQ8iqMdWs3gAX_lZ7AG&oh=69f58a457d7ab178dd7a8227125eb77b&oe=5EFD43B0"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+            </li>
+            <li class="content_person">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46567724_410252449719827_7319442712761991168_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Rlq6RoFI6MEAX_z0P34&oh=64e0145b5883b43de03e223c9ab07448&oe=5EFFE7C3"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+            </li>
+            <li class="content_person">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46567724_410252449719827_7319442712761991168_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Rlq6RoFI6MEAX_z0P34&oh=64e0145b5883b43de03e223c9ab07448&oe=5EFFE7C3"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+            </li>
+            <li class="content_person">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/95499625_2920659121362817_2323639094535520256_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=n1iOKmb9uh0AX8C_1Bp&oh=458637e1134b46ae471407636ddf9e02&oe=5EFE2606"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--right_box1-->
+
+        <div class="right_box box_line clearfix">
+          <div class="box_tit">
+            <span>스토리</span>
+            <span>모두 보기</span>
+          </div>
+          <ul>
+            <li class="content_person clearfix">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+              <a class="follow" href="#">팔로우</a>
+            </li>
+
+            <li class="content_person clearfix">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+              <a class="follow" href="#">팔로우</a>
+            </li>
+
+
+            <li class="content_person clearfix">
+              <img class="id_img"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/14073272_1259953250705339_1263405662_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=7Zekv6zT7RwAX-PeB-r&oh=f5f04a01b3fe6d1d40c7e67431852399&oe=5EFCEE95"
+                alt="이미지">
+              <div class="id_person">
+                <span class="id_tit">wecode</span>
+                <span class="id_txt">wecode|위코드</span>
+              </div>
+              <a class="follow" href="#">팔로우</a>
+            </li>
+          </ul>
+        </div>
+        <!--right_box2-->
+
+
+      </div>
+    </div>
+    <!--feeds-->
+
+  </main>
+  <!--main-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
