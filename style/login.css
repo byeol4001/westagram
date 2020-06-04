@@ -1,4 +1,7 @@
-body{background-color: #fafafa;}
+body{
+    background-color: #fafafa;
+}
+
 .container{
     position: absolute;
     top: 50%;
@@ -16,10 +19,12 @@ body{background-color: #fafafa;}
     padding: 2rem 0;
     border: 1px solid #dbdbdb;
 }
+
 #loginBox img{
     width:170px;
     margin-bottom: 30px;
 }
+
 #loginBox input, #loginBox button{
     width: 250px;
     margin: 4px 0;
