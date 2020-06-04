@@ -26,11 +26,12 @@ body{
 }
 
 .id_person span:first-child{
-    font-size:16px;
+    font-size:15px;
+    margin-bottom: 3px;
 }
 
 .id_person span:nth-child(2){
-    font-size: 14px;
+    font-size: 13px;
     color: #8e8e8e;
 }
 
@@ -208,7 +209,7 @@ nav{
 }
 
 .follow{
-    font-size: 14px;
+    font-size: 13px;
     position: absolute;
     right: 0;
     color: #0095f6;
@@ -229,11 +230,11 @@ nav{
 }
 .right_box .box_tit span:nth-child(1){
     color:#8e8e8e;
-    font-size: 14px;
+    font-size: 12px;
  
 }
 .right_box .box_tit span:nth-child(2){
     float: right;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 2px;
 }
